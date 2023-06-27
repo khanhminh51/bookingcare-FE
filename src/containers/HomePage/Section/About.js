@@ -14,8 +14,8 @@ class About extends Component {
                         <iframe width="100%" height="400px"
                             src="https://www.youtube.com/embed/OBOBkNQx1Jc"
                             title="MAN UNITED - MAN CITY | GREALISH RẤT HAY NHƯNG BRUNO VÀ RASHFORD QUÁ XUẤT SẮC | NGOẠI HẠNG ANH 22/23"
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                            frameBorder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen>
                         </iframe>
                     </div>
                     <div className='content-right'>
