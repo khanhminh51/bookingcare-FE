@@ -4,21 +4,26 @@ import HomeHeader from '../../HomePage/HomeHeader';
 import './DetailDoctor.scss';
 import { getDetailInforDoctor } from '../../../services/userService';
 import { LANGUAGES } from '../../../utils';
+import DoctorSchedule from './DoctorSchedule';
 
 class DetailDoctor extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            detailDoctor: {}
+            detailDoctor: {},
+            currentDoctorId: -1
         }
     }
     async componentDidMount() {
         if (this.props.match && this.props.match.params && this.props.match.params.id) {
             let id = this.props.match.params.id;
+            this.setState({
+                currentDoctorId: id,
+            })
             let res = await getDetailInforDoctor(id);
             if (res && res.errCode === 0) {
                 this.setState({
-                    detailDoctor: res.data
+                    detailDoctor: res.data,
                 })
             }
             console.log('check res: ', res);
@@ -30,7 +35,6 @@ class DetailDoctor extends Component {
     }
     render() {
 
-        console.log('check state2: ', this.state);
         let { language } = this.props;
         let { detailDoctor } = this.state;
         let nameVi, nameEn = '';
@@ -60,7 +64,14 @@ class DetailDoctor extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className='schedule-doctor'></div>
+                    <div className='schedule-doctor'>
+                        <div className='content-left'>
+                            <DoctorSchedule
+                            doctorIdFromParent = {this.state.currentDoctorId}
+                            />
+                        </div>
+                        <div className='content-right'></div>
+                    </div>
                     <div className='detail-infor-doctor'>
                         {detailDoctor && detailDoctor.Markdown && detailDoctor.Markdown.contentHTML &&
                         <div dangerouslySetInnerHTML={{__html: detailDoctor.Markdown.contentHTML}}>
