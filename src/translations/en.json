@@ -24,8 +24,8 @@
     "menu": {
         "admin": {
             "manage-user": "User System",
-            "manage-doctor":"Manage doctors",
-            "manage-admin":"Manage admins",
+            "manage-doctor": "Manage doctors",
+            "manage-admin": "Manage admins",
             "crud": "CRUD user",
             "crud-redux": "CRUD Redux",
             "clinic": "Clinics",
@@ -34,43 +34,64 @@
             "manage-specialty": "Manage Specialties",
             "handbook": "Handbook",
             "manage-handbook": "Manage handbook"
-
         },
-        "doctor":{
+        "doctor": {
             "manage-schedule": "Manage Doctor's schedule"
         }
     },
-    "manage-user":{
+    "manage-user": {
         "add": "Add a new user",
-        "email":"Email",
-        "password":"Password",
-        "firstName":"First Name",
-        "lastName":"Last Name",
-        "phoneNumber":"Phone Number",
-        "address":"Address",
-        "gender":"Gender",
-        "position":"Position",
-        "role":"Role",
-        "image":"Avatar",
-        "save":"Save user",
-        "edit" : "Save change"
+        "email": "Email",
+        "password": "Password",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phoneNumber": "Phone Number",
+        "address": "Address",
+        "gender": "Gender",
+        "position": "Position",
+        "role": "Role",
+        "image": "Avatar",
+        "save": "Save user",
+        "edit": "Save change"
     },
-    "homepage":{
+    "homepage": {
         "outstanding-doctor": "Last week's featured doctor",
         "more-info": "More infor"
     },
-    "manage-schedule":{
+    "manage-schedule": {
         "title": "Manage doctor's examination plan",
         "choose-doctor": "Choose doctor",
         "choose-date": "Choose date",
         "save": "Save infor"
     },
-    "patient":{
+    "patient": {
         "detail-doctor": {
-            "schedule":"Schedule",
-            "no-schedule":"The doctor does not have an appointment during this time, please choose another time",
-            "choose":"Choose ",
-            "book-free":" and book (free)"
+            "schedule": "Schedule",
+            "no-schedule": "The doctor does not have an appointment during this time, please choose another time",
+            "choose": "Choose ",
+            "book-free": " and book (free)"
+        },
+        "extra-infor-doctor": {
+            "text-address": "Address of examination",
+            "price": "Examination price",
+            "detail": "See details",
+            "payment": "The patient can pay the cost in the form of:",
+            "hide-price": "Hide price list"
+        }
+    },
+    "admin": {
+        "manage-doctor": {
+            "title": "Create more information doctor",
+            "select-doctor": "Select doctor",
+            "intro": "Introduction:",
+            "add": "Create infor",
+            "save": "Save infor",
+            "price": "Price",
+            "payment": "Payment",
+            "province": "Province",
+            "nameClinic": "Clinic's name",
+            "addressClinic": "Clinic's address",
+            "note": "Note"
         }
     }
 }
