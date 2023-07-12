@@ -26,7 +26,6 @@ class DetailDoctor extends Component {
                     detailDoctor: res.data,
                 })
             }
-            console.log('check res: ', res);
         }
 
     }
