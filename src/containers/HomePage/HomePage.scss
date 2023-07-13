@@ -74,9 +74,12 @@
                 }
 
                 &.section-medical-facility {
-                    background-image: url('../../assets/medical-facility/bvcr.jpg');
+                    // background-image: url('../../assets/medical-facility/bvcr.jpg');
                     width: 100%;
                     height: 150px;
+                    background-size:contain;
+                    background-color: white;
+                    border: 1px solid #ece7e7;
                 }
 
                 &.section-outstanding-doctor {
